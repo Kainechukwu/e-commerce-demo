@@ -1,6 +1,7 @@
 <template>
     <div class="layout-rspv flex flex-col gap-6">
         <TopSellingItems />
+        <TopSellingItems />
 
         <SponsoredProducts />
     </div>

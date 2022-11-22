@@ -12,8 +12,9 @@
   }
   ```
 -->
+<!-- ad8f7a -->
 <template>
-    <footer class="bg-gray-800" aria-labelledby="footer-heading">
+    <footer class="bg-[#2c241e]" aria-labelledby="footer-heading">
         <h2 id="footer-heading" class="sr-only">Footer</h2>
         <div class="layout-rspv py-12 lg:py-16">
             <div class="pb-8 xl:grid xl:grid-cols-5 xl:gap-8">
@@ -64,7 +65,7 @@
                                 <select
                                     id="language"
                                     name="language"
-                                    class="block w-full appearance-none rounded-md border border-transparent bg-gray-700 bg-none py-2 pl-3 pr-10 text-base text-white focus:border-white focus:outline-none focus:ring-white sm:text-sm"
+                                    class="block w-full appearance-none rounded-md border border-transparent bg-brand-500 bg-none py-2 pl-3 pr-10 text-base text-white focus:border-white focus:outline-none focus:ring-white sm:text-sm"
                                 >
                                     <option selected="">English</option>
                                     <option>French</option>
@@ -83,7 +84,7 @@
                                 <select
                                     id="currency"
                                     name="currency"
-                                    class="block w-full appearance-none rounded-md border border-transparent bg-gray-700 bg-none py-2 pl-3 pr-10 text-base text-white focus:border-white focus:outline-none focus:ring-white sm:text-sm"
+                                    class="block w-full appearance-none rounded-md border border-transparent bg-brand-500 bg-none py-2 pl-3 pr-10 text-base text-white focus:border-white focus:outline-none focus:ring-white sm:text-sm"
                                 >
                                     <option>ARS</option>
                                     <option selected="">AUD</option>

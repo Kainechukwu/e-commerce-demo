@@ -2,7 +2,7 @@
     <div class="bg-white">
         <div class="mx-auto max-w-2xl py-6 px-4 sm:py-8 sm:px-6 lg:max-w-7xl lg:px-8">
             <div class="md:flex md:items-center md:justify-between">
-                <h2 class="text-2xl font-bold tracking-tight text-gray-900">Trending products</h2>
+                <h2 class="text-2xl font-bold tracking-tight text-gray-900">Princess's Trending products</h2>
                 <a href="#" class="hidden text-sm font-medium text-brand-600 hover:text-indigo-500 md:block">
                     Shop the collection
                     <span aria-hidden="true"> &rarr;</span>
