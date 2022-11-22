@@ -212,12 +212,12 @@ import { MagnifyingGlassIcon } from '@heroicons/vue/20/solid'
 const searchText = ref('')
 const route = useRoute()
 const navigation = [
-    { name: 'Dashboard', href: '/', icon: HomeIcon, current: true },
-    { name: 'Home', href: 'home', icon: UsersIcon, current: false },
-    { name: 'Projects', href: 'about', icon: FolderIcon, current: false },
-    { name: 'Calendar', href: 'about', icon: CalendarIcon, current: false },
-    { name: 'Documents', href: 'about', icon: InboxIcon, current: false },
-    { name: 'Reports', href: 'about', icon: ChartBarIcon, current: false },
+    { name: 'Dashboard', href: '/sidebar', icon: HomeIcon, current: true },
+    { name: 'Home', href: '/sidebar/home', icon: UsersIcon, current: false },
+    { name: 'Projects', href: '/sidebar/about', icon: FolderIcon, current: false },
+    { name: 'Calendar', href: '/sidebar/about', icon: CalendarIcon, current: false },
+    { name: 'Documents', href: '/sidebar/about', icon: InboxIcon, current: false },
+    { name: 'Reports', href: '/sidebar/about', icon: ChartBarIcon, current: false },
 ]
 const userNavigation = [
     { name: 'Your Profile', href: '#' },

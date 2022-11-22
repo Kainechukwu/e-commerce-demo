@@ -1,14 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '/src/components/HomeView.vue'
 import TestView from '/src/components/TestView.vue'
-import MainLayout from '/src/layouts/SideBar.vue'
+import SidebarLayout from '/src/layouts/SideBar.vue'
 import About from '/src/components/About.vue'
-
+import BaseLayout from '/src/layouts/BaseLayout.vue'
+import Dashboard from '/src/views/DashboardView.vue'
 const routes = [
     {
-        path: '/',
-        name: 'MainLayout',
-        component: MainLayout,
+        path: '/sidebar',
+        name: 'SidebarLayout',
+        component: SidebarLayout,
         children: [
             {
                 path: '',
@@ -21,9 +22,22 @@ const routes = [
                 component: Home,
             },
             {
-                path: '/about',
+                path: 'about',
                 name: 'About',
                 component: About,
+            },
+        ],
+    },
+
+    {
+        path: '/',
+        name: 'BaseLayout',
+        component: BaseLayout,
+        children: [
+            {
+                path: '',
+                name: 'Dashboard',
+                component: Dashboard,
             },
         ],
     },

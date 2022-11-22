@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+
+.layout-rspv {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0 4px 4px -4px rgb(0 0 0 / 12%);
+}
