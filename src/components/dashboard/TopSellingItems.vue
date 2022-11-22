@@ -8,7 +8,7 @@
                     <span aria-hidden="true"> &rarr;</span>
                 </a>
             </div>
-
+            <!-- 
             <div class="mt-6 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-6 md:grid-cols-4 md:gap-y-0 lg:gap-x-8">
                 <div v-for="product in products" :key="product.id" class="group relative">
                     <div class="h-56 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:h-72 xl:h-80">
@@ -23,7 +23,7 @@
                     <p class="mt-1 text-sm text-gray-500">{{ product.color }}</p>
                     <p class="mt-1 text-sm font-medium text-gray-900">{{ product.price }}</p>
                 </div>
-            </div>
+            </div> -->
 
             <div class="mt-8 text-sm md:hidden">
                 <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
@@ -32,10 +32,57 @@
                 </a>
             </div>
         </div>
+
+        <carousel v-model="slideIndex" :autoplay="5000" :wrap-around="true" :transition="2000">
+            <slide v-for="product in products" :key="product.id" class="group relative">
+                <div class="carousel__item">
+                    <div class="h-56 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:h-72 xl:h-80">
+                        <img :src="product.imageSrc" :alt="product.imageAlt" class="h-full w-full object-cover object-center" />
+                    </div>
+                    <h3 class="mt-4 text-sm text-gray-700">
+                        <a :href="product.href">
+                            <span class="absolute inset-0" />
+                            {{ product.name }}
+                        </a>
+                    </h3>
+                    <p class="mt-1 text-sm text-gray-500">{{ product.color }}</p>
+                    <p class="mt-1 text-sm font-medium text-gray-900">{{ product.price }}</p>
+                </div>
+            </slide>
+
+            <template #addons>
+                <navigation />
+                <!-- <pagination class="" /> -->
+            </template>
+        </carousel>
+
+        <div class="flex z-40 gap-4 items-center justify-center mt-12 mb-[50px]">
+            <button
+                v-for="(content, index) in products"
+                :key="content.id"
+                :class="products[slideIndex].id === products[index].id ? 'bg-brand-600' : 'bg-brand-200'"
+                @click="changeView(index)"
+                class="h-[6px] w-[6px] rounded-[100%] bg-red"
+            ></button>
+        </div>
     </div>
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
+import 'vue3-carousel/dist/carousel.css'
+import {
+    Carousel,
+    Slide,
+    // Pagination,
+    Navigation,
+} from 'vue3-carousel'
+
+const slideIndex = ref(0)
+const changeView = (index) => {
+    slideIndex.value = index
+}
 const products = [
     {
         id: 1,
@@ -47,7 +94,7 @@ const products = [
         imageAlt: 'Hand stitched, orange leather long wallet.',
     },
     {
-        id: 1,
+        id: 2,
         name: 'Organizer set',
         color: 'Walnut',
         price: '$75',
@@ -56,7 +103,7 @@ const products = [
         imageAlt: 'Hand stitched, orange leather long wallet.',
     },
     {
-        id: 1,
+        id: 3,
         name: 'Machiner pencil and pen set',
         color: 'Black',
         price: '$75',
@@ -65,7 +112,7 @@ const products = [
         imageAlt: 'Hand stitched, orange Machiner pencil and pen set.',
     },
     {
-        id: 1,
+        id: 4,
         name: 'Mini sketch books',
         color: 'Light brown',
         price: '$75',
