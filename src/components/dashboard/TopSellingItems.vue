@@ -34,9 +34,9 @@
         </div>
 
         <div class="px-4 sm:px-6 lg:px-8">
-            <carousel v-model="slideIndex" :autoplay="3000" :wrap-around="true" :transition="1000" :itemsToShow="3.95">
+            <carousel class="" v-model="slideIndex" :autoplay="3000" :wrap-around="true" :transition="1000" :itemsToShow="3.95">
                 <slide v-for="product in products" :key="product.id" class="group relative">
-                    <div class="carousel__item">
+                    <div class="carousel__item px-2">
                         <div
                             :class="product.id === products[slideIndex].id ? 'lg:h-80 xl:h-[22rem]' : ''"
                             class="h-56 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:h-72 xl:h-80"
@@ -129,3 +129,10 @@ const products = [
     // More products...
 ]
 </script>
+
+<style lang="scss" scoped>
+// .carousel_track {
+//     display: flex;
+//     gap: 1rem;
+// }
+</style>
