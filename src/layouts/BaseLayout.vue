@@ -14,7 +14,7 @@
                     </div>
                     <div class="ml-10 space-x-4">
                         <a href="#" class="inline-block rounded-md border border-transparent bg-brand-500 py-2 px-4 text-base font-medium text-white hover:bg-opacity-75">Sign in</a>
-                        <a href="#" class="inline-block rounded-md border border-transparent bg-white py-2 px-4 text-base font-medium text-indigo-600 hover:bg-indigo-50">Sign up</a>
+                        <a href="#" class="inline-block rounded-md border border-transparent bg-white py-2 px-4 text-base font-medium text-brand-600 hover:bg-brand-100">Sign up</a>
                     </div>
                 </div>
                 <div class="flex flex-wrap justify-center space-x-6 py-4 lg:hidden">

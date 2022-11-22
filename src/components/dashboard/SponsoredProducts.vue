@@ -2,7 +2,7 @@
     <div class="bg-white">
         <div class="mx-auto max-w-2xl py-6 px-4 sm:py-8 sm:px-6 lg:max-w-7xl lg:px-8">
             <div class="md:flex md:items-center md:justify-between">
-                <h2 class="text-2xl font-bold tracking-tight text-gray-900">Trending products</h2>
+                <h2 class="text-2xl font-bold tracking-tight text-gray-900">Sponsored products</h2>
                 <a href="#" class="hidden text-sm font-medium text-brand-600 hover:text-indigo-500 md:block">
                     Shop the collection
                     <span aria-hidden="true"> &rarr;</span>
@@ -39,39 +39,39 @@
 const products = [
     {
         id: 1,
-        name: 'Leather Long Wallet',
-        color: 'Natural',
-        price: '$75',
-        href: '#',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-04-trending-product-02.jpg',
-        imageAlt: 'Hand stitched, orange leather long wallet.',
-    },
-    {
-        id: 1,
-        name: 'Organizer set',
-        color: 'Walnut',
-        price: '$75',
-        href: '#',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-04-trending-product-01.jpg',
-        imageAlt: 'Hand stitched, orange leather long wallet.',
-    },
-    {
-        id: 1,
-        name: 'Machiner pencil and pen set',
+        name: 'Basic Tee',
         color: 'Black',
         price: '$75',
         href: '#',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-04-trending-product-03.jpg',
-        imageAlt: 'Hand stitched, orange Machiner pencil and pen set.',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+        imageAlt: 'Hand stitched, orange Basic Tee.',
     },
     {
         id: 1,
-        name: 'Mini sketch books',
-        color: 'Light brown',
+        name: 'Basic Tee',
+        color: 'Aspen White',
         price: '$75',
         href: '#',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-04-trending-product-04.jpg',
-        imageAlt: 'Hand stitched, orange leather long wallet.',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg',
+        imageAlt: 'Hand stitched, orange Basic Tee.',
+    },
+    {
+        id: 1,
+        name: 'Basic Tee',
+        color: 'Charcoal',
+        price: '$75',
+        href: '#',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-03.jpg',
+        imageAlt: 'Hand stitched, orange Basic Tee.',
+    },
+    {
+        id: 1,
+        name: 'Artwork Tee',
+        color: 'Iso Dots',
+        price: '$75',
+        href: '#',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-04.jpg',
+        imageAlt: 'Hand stitched, orange Basic Tee.',
     },
 
     // More products...
